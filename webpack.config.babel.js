@@ -1,19 +1,27 @@
-import path from 'path';
+import path from 'path'
+
+
+const distPath = path.join(__dirname, 'dist');
 
 export default {
   devtool: 'eval',
-  entry: './src/index',
+  entry: './src/index.js',
+  devServer: {
+    contentBase: distPath,
+    port: 9000,
+    historyApiFallback: true
+  },
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
-    publicPath: '/static/',
+    path: distPath + '/js/',
+    publicPath: 'js/',
+    filename: 'bundle.js'
   },
   module: {
     loaders: [{
       test: /\.js$/,
-      loaders: ['babel'],
+      loader: 'babel-loader',
       exclude: /node_modules/,
       include: __dirname,
     }],
   },
-};
+}

@@ -1,8 +1,32 @@
 {
-  "extends": "airbnb",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true
-    },
+  "extends": "wix/react",
+  "rules": {
+    "object-curly-spacing": ["error", "always"],
+    "babel/object-curly-spacing": ["error", "always"],
+    "react/jsx-curly-spacing": [2, "never", {"spacing": {
+      "objectLiterals": "never"
+    }}],
+    "react/jsx-pascal-case": 0,
+    "react/forbid-component-props": 0,
+    "react/no-unused-prop-types": 0,
+    "react/no-unescaped-entities": 0,
+    "react/no-find-dom-node": 0,
+    "no-mixed-operators": 0,
+    "react/jsx-boolean-value": 0,
+    "camelcase": 0,
+    "lodash/import-scope": 0,
+    "react/no-danger": 0
   },
+  "plugins": [
+    "eslint-plugin-babel"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "globals": {
+    "fetchMock": false,
+    "Wix": true
+  }
 }
