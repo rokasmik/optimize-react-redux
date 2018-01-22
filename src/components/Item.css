@@ -1,0 +1,35 @@
+.item {
+  width: 200px;
+  margin-top: 5px;
+  border: 2px solid grey;
+  border-radius: 2px;
+  display: flex;
+}
+
+.itemName {
+  padding: 10px 0px 10px 10px;
+  border-right: 2px solid grey;
+  flex: 1;
+}
+
+.itemCount {
+  width: 30px;
+  padding: 10px 0px;
+  text-align: center;
+  border-right: 2px solid grey;
+}
+
+.hideButton {
+  cursor: pointer;
+  width: 30px;
+  padding: 10px 0px;
+  text-align: center;
+  border-right: 2px solid grey;
+}
+
+.addButton {
+  cursor: pointer;
+  width: 30px;
+  padding: 10px 0px;
+  text-align: center;
+}
