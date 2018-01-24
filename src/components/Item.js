@@ -8,7 +8,8 @@ const Item = ({ name, count, hideItem, addOne }) => (
     <div className="itemCount">{ count }</div>
     <div className="hideButton" onClick={hideItem}>X</div>
     <div className="addButton" onClick={addOne}>+</div>
-  </div>    
+  </div>
 )
+
 
 export default Item

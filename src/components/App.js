@@ -4,7 +4,7 @@ import ItemsList from '../containers/items-list';
 
 const App = () => (
   <div>
-    <ItemsList />
+    <ItemsList/>
   </div>
 )
 

@@ -1,14 +1,17 @@
 import { connect } from 'react-redux'
 import ItemsList from '../components/ItemsList';
+import { createSelector } from 'reselect';
 
+
+const visibleItemsSelector = createSelector(
+  state => state.items.uids,
+  state => state.items.byUid,
+  (uids, items) => uids.filter(uid => !items[uid].hidden)
+)
 
 const mapStateToProps = state => {
-
-  const uids = Object.keys(state.items.byUid)
-  const visibleUids = uids.filter(uid => !state.items.byUid[uid].hidden)
-
   return {
-    uids: visibleUids
+    uids: visibleItemsSelector(state)
   }
 }
 

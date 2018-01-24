@@ -1,15 +1,18 @@
 import React from 'react'
-import Item from '../containers/item';
-import css from './ItemsList.css';
+import Item from '../containers/item'
+import css from './ItemsList.css'
 
 
-const ItemsList = ({ uids }) => (
-  <div>
-    <h2>Items</h2>
-    <div className={"listContainer"}>
-      { uids.map(uid => <Item uid={uid} key={uid} />) }
+const ItemsList = ({ uids }) => {
+
+  return (
+    <div>
+      <h2>Items</h2>
+      <div className={'listContainer'}>
+        { uids.map(uid => <Item uid={uid} key={uid}/>) }
+      </div>
     </div>
-  </div>
-)
+  );
+}
 
 export default ItemsList

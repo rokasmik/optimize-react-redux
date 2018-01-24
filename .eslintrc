@@ -13,10 +13,12 @@
     "react/no-find-dom-node": 0,
     "no-mixed-operators": 0,
     "react/jsx-boolean-value": 0,
+    "react/prop-types": 0,
     "camelcase": 0,
     "lodash/import-scope": 0,
     "react/no-danger": 0,
-    "semi": 0
+    "semi": 0,
+    "no-unused-vars": 0
   },
   "plugins": [
     "eslint-plugin-babel"
