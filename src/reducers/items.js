@@ -3,7 +3,7 @@ import uuid from 'uuid/v1';
 import { generateItems } from '../utils/items-generator';
 import {
   ITEMS_ADD_MANY,
-  ITEM_HIDE,
+  ITEM_LIKE,
   ITEM_COUNT_ADD_ONE
 } from '../actions/items'
 
@@ -16,12 +16,12 @@ const byUid = (state = {}, action) => {
         [item.uid]: item
       }), state)
 
-    case ITEM_HIDE:
+    case ITEM_LIKE:
       return {
         ...state,
         [action.uid]: {
           ...state[action.uid],
-          hidden: true
+          liked: true
         }
       }
 

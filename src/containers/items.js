@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import ItemsList from '../components/Items';
 import { createSelector } from 'reselect';
-import { hideItem, addOneToCount } from '../actions/items'
+import { likeItem, addOneToCount } from '../actions/items'
 
 
 const visibleItemsSelector = createSelector(
@@ -17,7 +17,7 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = {
-  hideItem,
+  likeItem,
   addOneToCount
 }
 

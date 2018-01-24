@@ -14,7 +14,7 @@ const ItemsList = props => {
             {...item}
             key={item.uid}
             addOne={() => props.addOneToCount(item.uid)}
-            hideItem={() => props.hideItem(item.uid)}
+            likeItem={() => props.likeItem(item.uid)}
           />
         ))}
       </div>
