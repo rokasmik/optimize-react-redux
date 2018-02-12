@@ -29,9 +29,13 @@ Second list:
 
 A huge list is connected to be able to see the rendering optimization difference.
 The flow of events in both cases:
+
 One container list: TBD
+
 Two containers list: TBD
 
 Results: 
+
 One container list: TBD
+
 Two containers list: TBD
