@@ -28,7 +28,7 @@ Second list:
 * Second container renders one item, taking it's data by the id from the store
 
 A huge list is connected to be able to see the rendering optimization difference.
-The flow of events after a "love" action:
+# The flow of events after a "love" action:
 
 One container list:
 1. Container recalculates mapStateToProps
