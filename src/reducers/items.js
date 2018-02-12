@@ -1,6 +1,6 @@
-import { combineReducers } from 'redux';
-import uuid from 'uuid/v1';
-import { generateItems } from '../utils/items-generator';
+import { combineReducers } from 'redux'
+import uuid from 'uuid/v1'
+import { generateItems } from '../utils/items-generator'
 import {
   ITEMS_ADD_MANY,
   ITEM_LIKE,

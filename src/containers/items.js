@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
-import ItemsList from '../components/Items';
-import { createSelector } from 'reselect';
+import ItemsList from '../components/Items'
+import { createSelector } from 'reselect'
 import { likeItem, addOneToCount } from '../actions/items'
 
 

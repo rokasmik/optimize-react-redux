@@ -1,7 +1,7 @@
 import path from 'path'
 
 
-const distPath = path.join(__dirname, 'dist');
+const distPath = path.join(__dirname, 'dist')
 
 export default {
   devtool: 'source-map',

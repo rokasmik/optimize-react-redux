@@ -1,5 +1,5 @@
 import React from 'react'
-import ItemsList from '../containers/items';
+import ItemsList from '../containers/items'
 
 
 const App = () => (

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
-import ItemsList from '../components/ItemsList';
-import { createSelector } from 'reselect';
+import ItemsList from '../components/ItemsList'
+import { createSelector } from 'reselect'
 
 
 const mapStateToProps = state => {

@@ -6,8 +6,8 @@ import itemsApp from './reducers'
 import App from './components/App'
 import thunk from 'redux-thunk'
 
-import { addItemsWithUids } from './actions/items';
-import { generateItems } from './utils/items-generator';
+import { addItemsWithUids } from './actions/items'
+import { generateItems } from './utils/items-generator'
 
 
 const store = createStore(itemsApp, compose(

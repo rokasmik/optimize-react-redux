@@ -1,10 +1,10 @@
 import React from 'react'
-import css from './Item.css';
+import css from './Item.css'
 
 
 const Item = ({ name, count, liked, likeItem, addOne }) => {
 
-  const nameClassName = 'itemName' + (liked ? ' liked' : '');
+  const nameClassName = 'itemName' + (liked ? ' liked' : '')
 
   return (
     <div className="item">

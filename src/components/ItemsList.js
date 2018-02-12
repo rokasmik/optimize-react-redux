@@ -12,7 +12,7 @@ const ItemsList = ({ uids }) => {
         { uids.map(uid => <Item uid={uid} key={uid}/>) }
       </div>
     </div>
-  );
+  )
 }
 
 export default ItemsList

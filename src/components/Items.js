@@ -19,7 +19,7 @@ const ItemsList = props => {
         ))}
       </div>
     </div>
-  );
+  )
 }
 
 export default ItemsList
