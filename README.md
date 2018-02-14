@@ -52,3 +52,6 @@ One container list:
 Two containers list:
 
 ![Screenshot](/screenshots/two-containers.png)
+
+# To do:
+* Dive in to reconsilation, maybe instead of live examples with per instance memoization
