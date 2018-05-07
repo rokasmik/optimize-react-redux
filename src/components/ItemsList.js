@@ -1,6 +1,6 @@
-import React from 'react'
-import Item from '../containers/item'
-import css from './ItemsList.css'
+import React from 'react';
+import Item from '../containers/item';
+import css from './ItemsList.css';
 
 
 const ItemsList = ({ uids }) => {
@@ -12,7 +12,7 @@ const ItemsList = ({ uids }) => {
         { uids.map(uid => <Item uid={uid} key={uid}/>) }
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ItemsList
+export default ItemsList;

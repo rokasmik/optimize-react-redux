@@ -1,11 +1,11 @@
-import { combineReducers } from 'redux'
-import uuid from 'uuid/v1'
-import { generateItems } from '../utils/items-generator'
+import { combineReducers } from 'redux';
+import uuid from 'uuid/v1';
+import { generateItems } from '../utils/items-generator';
 import {
   ITEMS_ADD_MANY,
   ITEM_LIKE,
   ITEM_COUNT_ADD_ONE
-} from '../actions/items'
+} from '../actions/items';
 
 
 const byUid = (state = {}, action) => {
@@ -14,7 +14,7 @@ const byUid = (state = {}, action) => {
       return action.items.reduce((acc, item) => ({
         ...acc,
         [item.uid]: item
-      }), state)
+      }), state);
 
     case ITEM_LIKE:
       return {
@@ -23,7 +23,7 @@ const byUid = (state = {}, action) => {
           ...state[action.uid],
           liked: true
         }
-      }
+      };
 
     case ITEM_COUNT_ADD_ONE:
       return {
@@ -32,25 +32,25 @@ const byUid = (state = {}, action) => {
           ...state[action.uid],
           count: state[action.uid].count + 1
         }
-      }
+      };
 
     default:
-      return state
+      return state;
   }
-}
+};
 
 const uids = (state = [], action) => {
   switch (action.type) {
     case ITEMS_ADD_MANY:
-      return [...state, ...action.items.map(item => item.uid)]
+      return [...state, ...action.items.map(item => item.uid)];
 
     default:
-      return state
+      return state;
   }
-}
+};
 
 
 export default combineReducers({
   byUid,
   uids
-})
+});

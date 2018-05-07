@@ -1,6 +1,6 @@
-import React from 'react'
-import Item from '../components/item'
-import css from './ItemsList.css'
+import React from 'react';
+import Item from '../components/item';
+import css from './ItemsList.css';
 
 
 const ItemsList = props => {
@@ -15,11 +15,11 @@ const ItemsList = props => {
             key={item.uid}
             addOne={() => props.addOneToCount(item.uid)}
             likeItem={() => props.likeItem(item.uid)}
-          />
+            />
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ItemsList
+export default ItemsList;
