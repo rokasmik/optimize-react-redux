@@ -8,10 +8,10 @@ const Item = ({ name, count, liked, likeItem, addOne }) => {
 
   return (
     <div className="item">
-      <div className={nameClassName}>{ name }</div>
-      <div className="itemCount">{ count }</div>
-      <div className="likeButton" onClick={likeItem}>{'\u2665'}</div>
+      <div className={nameClassName}>{name}</div>
+      <div className="itemCount">{count}</div>
       <div className="addButton" onClick={addOne}>+</div>
+      <div className="likeButton" onClick={likeItem}>{'\u2665'}</div>
     </div>
   );
 };
