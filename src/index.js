@@ -15,7 +15,7 @@ const store = createStore(itemsApp, compose(
   window.devToolsExtension())
 );
 
-const DEFAULT_ITEMS = generateItems(2000);
+const DEFAULT_ITEMS = generateItems(100);
 store.dispatch(addItemsWithUids(DEFAULT_ITEMS));
 
 render(

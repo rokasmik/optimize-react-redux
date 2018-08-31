@@ -6,7 +6,7 @@ import css from './ItemsList.css';
 const ItemsList = props => {
 
   return (
-    <div>
+    <div className={'list'}>
       <h2>Items</h2>
       <div className={'listContainer'}>
         { props.items.map(item => (

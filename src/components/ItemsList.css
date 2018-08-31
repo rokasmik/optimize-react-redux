@@ -1,4 +1,15 @@
+html {
+  background-color: rgb(51,51,51);
+  color: rgb(187,187,187);
+  font-family: arial;
+}
+
+
 .listContainer {
   display: inline-block;
   margin: 20px;
+}
+
+.list {
+  width: 300px; 
 }
